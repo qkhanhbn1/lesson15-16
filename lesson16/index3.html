@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/student-management.js">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="themmoi">
+        <button class="btn btn-primary md-5" id="addNewStudent">Thêm mới sinh viên</button>
+    </div>
+        <div class="timkiem col-md-4">
+            <input type="text" class="form-control " id="searchKeyword" placeholder="Search Here">
+        </div>             
+        <div class="btn-timkiem">
+            <button class="btn btn-primary mb-3" id="addNewStudent">Tìm kiếm</button>
+        </div>             
+        <div class="sap-xep col-md-2">
+            <input type="text" class="form-control " id="searchKeyword" placeholder="Sắp xếp" >
+        </div>             
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <h3>Danh sách sinh viên</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Mã sinh viên</th>
+                        <th>Tên sinh viên</th>
+                        <th>Tuổi</th>
+                        <th>Giới tính</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsTable">
+                </tbody>
+            </table>
+
+        <div class="col-md-4 form-section">
+            
+        </div>
+    </div>
+</div>
+</section>
+<script src="js/student-management.js"></script>
+
+</body>
+</html>

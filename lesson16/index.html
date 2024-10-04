@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/student-management.js">
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+        .btn {
+            margin-right: 5px;
+        }
+        .form-section {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body> 
+
+<div class="container">
+    <div class="row">
+        <!-- Bảng Danh sách Sinh viên -->
+        <div class="col-md-12">
+            <button class="btn btn-primary mb-3" id="addNewStudent">Thêm mới sinh viên</button>
+            <input type="text" class="form-control mb-3" id="searchKeyword" placeholder="Search Here">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Mã sinh viên</th>
+                        <th>Tên sinh viên</th>
+                        <th>Tuổi</th>
+                        <th>Giới tính</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsTable">
+                    <!-- Rows sẽ được thêm vào đây bằng jQuery -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="js/student-management.js"></script>
+
+</body>
+</html>

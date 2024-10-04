@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+    font-size: 16px;
+}
+header{
+    display: flex;
+    background-color: #e5e5e5;
+}
+header .themmoi{
+    margin: 20px 250px 5px 20px;
+}
+header .timkiem{
+    margin: 20px 0 5px 100px;
+}
+header .btn-timkiem{
+    margin: 20px 40px 5px 10px;
+}
+header .sap-xep{
+    margin: 20px 40px 5px 20px;
+}
+h3{
+    margin: 50px 0;
+}
+

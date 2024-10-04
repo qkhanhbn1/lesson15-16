@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Sinh Viên</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3 id="formTitle">Thêm Sinh Viên</h3>
+    <form id="studentForm">
+        <div class="form-group">
+            <label for="studentId">Mã sinh viên:</label>
+            <input type="text" class="form-control" id="studentId" disabled>
+        </div>
+        <div class="form-group">
+            <label for="studentName">Tên sinh viên:</label>
+            <input type="text" class="form-control" id="studentName" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Tuổi:</label>
+            <input type="number" class="form-control" id="age" required>
+        </div>
+        <div class="form-group">
+            <label for="sex">Giới tính:</label>
+            <select class="form-control" id="sex">
+                <option value="true">Nam</option>
+                <option value="false">Nữ</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="birthDate">Ngày sinh:</label>
+            <input type="date" class="form-control" id="birthDate" required>
+        </div>
+        <div class="form-group">
+            <label for="birthPlace">Nơi sinh:</label>
+            <input type="text" class="form-control" id="birthPlace" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Địa chỉ:</label>
+            <input type="text" class="form-control" id="address" required>
+        </div>
+        <button type="button" class="btn btn-primary" id="saveStudent">Lưu</button>
+    </form>
+</div>
+
+<script src="js/student-management.js">
+
+    
+</script>
+
+</body>
+</html>
