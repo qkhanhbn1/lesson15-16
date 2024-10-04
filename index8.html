@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Giờ Việt Nam</h1>
+    <h3>Click vào để hiển thị giờ </h3>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Hiện giờ</button>
+    <p id="demo"></p>
+    
+    <button onclick="innerHTML=Date()">Hiển thị giờ</button>
+
+    <p>sdung function</p>
+    <button onclick="displayDate()">Hiển thị bằng function</button>
+    <p id="demo1"></p>
+
+    <script>
+        function displayDate(){
+            document.getElementById("demo1").innerHTML=Date();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mothod OBj</h1>
+    <p>Hiển thị 1 biến</p>
+    <p id="demo"></p>
+    <p>Đối tượng nhiều gtri</p>
+    <p id="demo1"></p>
+    <p>Tao 1 đối tượng rỗng sau đó thêm 4 thuộc tính</p>
+    <p id="demo2"></p>
+    <p>- Phương thức có hàm xdinh lưu trữ trong gtri thuộc tính</p>
+    <p id="demo3"></p>
+
+    <script>
+        let car ="BMW";
+        document.getElementById("demo").innerHTML="Anh đón em bằng "+ car + " nhé";
+
+        const car1 = {type:"VINF",model:"V9",color:"blue" };
+        document.getElementById("demo1").innerHTML = "Anh đón em bằng xe "+ car1.type+" "+ car1.model +" có màu " + car1.color;
+
+        const person = {};
+        person.name = "Lê";
+        person.age = 18;
+        person.address= "Bac Ninh";
+        person.gender = "Male";
+        document.getElementById("demo2").innerHTML= "tôi là "+person.name+ " tôi " + person.age + " tôi ở "+ person.address+ " giới tính "+person.gender; 
+        
+        const personn = {
+        firstName: "Quốc",
+        lastName:"Khánh",
+        age : 18,
+        address: "Bac Ninh",
+        gender :"Male",
+        fullName: function(){
+            return this.firstName + " " + this.lastName;
+        }
+        };
+        const x=person;
+        x.birth= 2003;
+        document.getElementById("demo3").innerHTML=personn.fullName()+" sinh năm " + x.birth;
+
+    </script>
+</body>
+</html>
